@@ -3,7 +3,12 @@ import faker from 'faker';
 import { AppStateContext } from '../../../Providers/AppState';
 import { Select as SelectComponent, Div, Label, Button } from './styles';
 import { Options } from './../Option';
-export const Select = ({ id }: any) => {
+
+interface ISelectProps {
+  id: string
+}
+
+export const Select = ({ id }: ISelectProps) => {
   const mock = {
     name: '',
     description: '',
