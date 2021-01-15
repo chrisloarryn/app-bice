@@ -30,7 +30,7 @@ export const Select = ({ id }: any) => {
       }}
     >
       <h1>
-        {currentActive && currentActive.name
+        {currentActive && currentActive.name !== ''
           ? 'Seleccionado'
           : 'NO Seleccionado'}
       </h1>
