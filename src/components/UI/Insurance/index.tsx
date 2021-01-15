@@ -3,7 +3,7 @@ import { AppStateContext } from '../../../Providers/AppState';
 import { NoData } from '../NoData/styles';
 import { Card, CardContent, Container, Img } from './styles';
 
-export const ActiveInsure = () => {
+export const ActiveInsure = (): JSX.Element => {
   const { active: activeInsure } = useContext(AppStateContext);
   if (!activeInsure.name) return <NoData>No hay un plan seleccionado</NoData>;
   return (
