@@ -2,14 +2,13 @@
 /** @jsxRuntime classic /
 /** @jsx jsx */
 import { jsx } from '@emotion/react';
-import { Select } from './../../../FormElements/Select';
+import { Select, Form } from './../../../FormElements';
 import { Title, Button } from '../../Atoms';
 import { File } from '../../Organisms';
 import { Fragment, useContext, useEffect } from 'react';
 import { Container } from '../../Templates';
 import { AppStateContext } from '../../../../Providers/AppState';
 import { useForm } from '../../../../Hooks/useForm';
-import { Form } from './styles';
 
 export const Insurance = ({ name = '' }: { name?: string }) => {
   const INSURANCE_NAME = 'insurance';
@@ -65,7 +64,6 @@ export const Insurance = ({ name = '' }: { name?: string }) => {
               handleChange={handleInputChange}
               name={INSURANCE_NAME}
             />
-
             <Button name='Elegir' />
           </Form>
         </Container>
