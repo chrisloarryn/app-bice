@@ -6,7 +6,7 @@
       "dom.iterable",
       "esnext"
     ],
-    "allowJs": true,
+    "allowJs": false,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
@@ -20,7 +20,12 @@
     "noEmit": true,
     "jsx": "react"
   },
+  "paths": {
+    "App/*": [
+      "App/*"
+    ]
+  },
   "include": [
-    "src"
+    "./src"
   ]
 }
