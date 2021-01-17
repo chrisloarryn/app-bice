@@ -41,12 +41,9 @@ export const AppStateProvider = ({ children }: any): JSX.Element => {
   const [insurances, setInsurances] = useState<any>();
 
   useEffect(() => {
-    console.log('useEffect');
     const availableIDs = [58, 59];
     availableIDs.map(async (id: number) => {
-      console.log(id)
       const { insurance } = await apiGet(`${urlBase}/${id}`);
-      console.log(insurance)
       setInsurances((prev: any) => {
         if (!prev) return [{ ...insurance }]
         if (prev) return [...prev, { ...insurance }]

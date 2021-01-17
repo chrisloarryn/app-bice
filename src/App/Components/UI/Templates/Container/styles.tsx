@@ -52,5 +52,5 @@ export const Container = styled.div<IContainerProps>`
       : css`
           align-items: ${props && props.align && styleAlign(props.align)};
         `}
-  width: 50%;
+  // width: 50%;
 `;

@@ -7,6 +7,7 @@ interface ISelectProps {
 export const Select = styled.select<ISelectProps>`
   display: flex;
   background: #FFFFFF;
+  border-radius: 10px;
   border: 1px solid #DDE3ED;
   box-sizing: border-box;
   border-radius: 4px;
